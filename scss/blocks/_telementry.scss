@@ -112,7 +112,7 @@
     margin-top: 56px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 440px) {
   .telementry {
     &::before {
       top: 165px;
@@ -124,14 +124,14 @@
   }
   .telementry__inner:nth-child(odd) {
     flex-direction: column-reverse;
-    width: 375px;
+    width: 440px;
   }
   .telementry__main {
-    max-width: 311px;
+    max-width: 376px;
     text-align: center;
   }
   .telementry__main-heading {
-    width: 311px;
+    width: 376px;
     margin: 0 auto;
     color: #495567;
     font-size: 32px;
@@ -142,7 +142,7 @@
   }
   .telementry__main-text {
     color: #939caa;
-    width: 311px;
+    width: 376px;
     margin: 0 auto;
     font-size: 15px;
     font-style: normal;
@@ -152,8 +152,8 @@
     margin-bottom: 32px;
   }
   .telementry__inner-img {
-    width: 311px;
-    height: 311px;
+    width: 376px;
+    height: 376px;
     margin-bottom: 56px;
   }
 }

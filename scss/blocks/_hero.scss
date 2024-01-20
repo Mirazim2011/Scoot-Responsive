@@ -173,18 +173,18 @@
     margin-left: 0;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 440px) {
   .hero {
     padding-top: 115px;
-    padding-bottom: 179px;
+    padding-bottom: 230px;
   }
   .hero__main {
-    max-width: 375px;
+    max-width: 440px;
     width: 100%;
     margin-left: 0;
   }
   .hero__main-heading {
-    width: 311px;
+    width: 376px;
     color: #fff;
     text-align: center;
     font-family: "Space Mono";
@@ -202,7 +202,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 167%;
-    width: 311px;
+    width: 376px;
     margin-top: 24px;
     margin-bottom: 32px;
   }
