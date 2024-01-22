@@ -82,7 +82,6 @@
 }
 @media only screen and (max-width: 768px) {
   .city {
-    overflow-x: hidden;
     &::before {
       top: 0;
       left: calc(50% - 730px);
@@ -91,6 +90,7 @@
       top: 0;
       left: calc(50% - 720px);
     }
+    overflow-x: hidden;
   }
   .city__inner:nth-child(odd) {
     flex-direction: column;
@@ -120,7 +120,6 @@
 }
 @media only screen and (max-width: 440px) {
   .city {
-    overflow-x: hidden;
     &::before {
       width: 735px;
       height: 138px;
@@ -131,6 +130,7 @@
     &::after {
       content: none;
     }
+    overflow-x: hidden;
   }
   .city__inner:nth-child(odd) {
     flex-direction: column;

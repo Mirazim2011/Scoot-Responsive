@@ -110,6 +110,7 @@
 }
 @media only screen and (max-width: 1020px) {
   .hero__main {
+    overflow-x: hidden;
     &::after {
       top: 366px;
       left: calc(50% - 500px);
@@ -118,12 +119,12 @@
 }
 @media only screen and (max-width: 768px) {
   .hero {
-    overflow-x: hidden;
     padding-left: 0;
     padding-right: 0;
     padding-top: 137px;
     padding-bottom: 217px;
     background-position: calc(50% - 130px);
+    overflow-x: hidden;
   }
   .hero__main {
     width: 100%;
@@ -176,9 +177,9 @@
 }
 @media only screen and (max-width: 440px) {
   .hero {
-    overflow-x: hidden;
     padding-top: 115px;
     padding-bottom: 230px;
+    overflow-x: hidden;
   }
   .hero__main {
     max-width: 440px;
