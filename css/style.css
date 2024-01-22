@@ -820,8 +820,8 @@ img {
 }
 @media only screen and (max-width: 440px) {
   .telementry::before {
-    top: 165px;
-    left: calc(50% - 158px);
+    top: 220px;
+    left: calc(50% - 160px);
   }
   .telementry::after {
     content: none;
@@ -1166,8 +1166,8 @@ img {
   .hassle::before {
     width: 735px;
     height: 138px;
-    top: 60px;
-    left: calc(50% - 625px);
+    top: 30px;
+    left: calc(50% - 70px);
     background-size: 735px 138px;
   }
   .hassle::after {
