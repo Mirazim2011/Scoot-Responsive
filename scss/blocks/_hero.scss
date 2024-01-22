@@ -118,6 +118,7 @@
 }
 @media only screen and (max-width: 768px) {
   .hero {
+    overflow-x: hidden;
     padding-left: 0;
     padding-right: 0;
     padding-top: 137px;
@@ -175,6 +176,7 @@
 }
 @media only screen and (max-width: 440px) {
   .hero {
+    overflow-x: hidden;
     padding-top: 115px;
     padding-bottom: 230px;
   }
