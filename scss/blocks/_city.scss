@@ -94,7 +94,8 @@
   }
   .city__inner:nth-child(odd) {
     flex-direction: column;
-    width: 768px;
+    max-width: 768px;
+    width: 100%;
   }
   .city__main {
     width: 100%;
@@ -134,7 +135,8 @@
   }
   .city__inner:nth-child(odd) {
     flex-direction: column;
-    width: 440px;
+    max-width: 440px;
+    width: 100%;
   }
   .city__main {
     max-width: 376px;
