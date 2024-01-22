@@ -110,7 +110,6 @@
 }
 @media only screen and (max-width: 1020px) {
   .hero__main {
-    overflow-x: hidden;
     &::after {
       top: 366px;
       left: calc(50% - 500px);
