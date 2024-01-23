@@ -42,18 +42,20 @@
 }
 .hero__title-box {
   position: relative;
+  margin-left: 65px;
 }
 .hero__title-box::before {
   content: "";
   position: absolute;
   top: 17px;
-  left: calc(50% - 248px);
+  left: calc(50% - 312px);
   width: 94px;
   height: 1px;
   background: #d9d9d9;
 }
 .hero__title-box-text {
-  width: 405px;
+  width: 100%;
+  max-width: 405px;
   color: #fff;
   font-size: 15px;
   font-style: normal;
@@ -61,7 +63,6 @@
   line-height: 167%;
   margin-bottom: 40px;
   margin-top: 40px;
-  margin-left: 95px;
 }
 .hero__title-box-link {
   max-width: 180px;
@@ -77,7 +78,6 @@
   padding: 14px 39px;
   text-decoration: none;
   border: 3px solid transparent;
-  margin-left: 95px;
 }
 .hero__title-box-link:hover {
   border: 3px solid #fcb72b;
@@ -108,7 +108,10 @@
   height: 62px;
   border-radius: 50%;
 }
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1040px) {
+  .hero {
+    padding-bottom: 190px;
+  }
   .hero__main {
     &::after {
       top: 366px;
@@ -129,7 +132,7 @@
     width: 100%;
     max-width: 573px;
     text-align: center;
-    margin-left: 70px;
+    margin: 0 auto;
     &::before {
       content: none;
     }
@@ -139,7 +142,8 @@
     }
   }
   .hero__main-heading {
-    width: 565px;
+    width: 100%;
+    max-width: 565px;
     margin: 0 auto;
     color: #fff;
     font-family: "Space Mono";
@@ -150,18 +154,17 @@
     letter-spacing: -2.5px;
   }
   .hero__title-box {
-    max-width: 100%;
-    width: 573px;
+    width: 100%;
+    max-width: 573px;
+    margin-left: 0;
     text-align: center;
     &::before {
       content: none;
     }
   }
-  .hero__main-text {
+  .hero__title-box-text {
     width: 100%;
     max-width: 573px;
-    margin-left: 0;
-    margin: 0 auto;
     margin-top: 24px;
     margin-bottom: 32px;
     color: #fff;
@@ -169,9 +172,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: 167%;
+    margin-left: 0;
   }
   .hero__title-box-link {
     margin-left: 0;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .hero__main-heading {
+    font-size: 44px;
   }
 }
 @media only screen and (max-width: 440px) {
@@ -186,7 +195,8 @@
     margin-left: 0;
   }
   .hero__main-heading {
-    width: 376px;
+    width: 100%;
+    max-width: 376px;
     color: #fff;
     text-align: center;
     font-family: "Space Mono";
@@ -204,8 +214,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: 167%;
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
     margin-top: 24px;
     margin-bottom: 32px;
+    margin-left: 0;
   }
 }

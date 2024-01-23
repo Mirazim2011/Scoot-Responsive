@@ -558,20 +558,22 @@ img {
 
 .hero__title-box {
   position: relative;
+  margin-left: 65px;
 }
 
 .hero__title-box::before {
   content: "";
   position: absolute;
   top: 17px;
-  left: calc(50% - 248px);
+  left: calc(50% - 312px);
   width: 94px;
   height: 1px;
   background: #d9d9d9;
 }
 
 .hero__title-box-text {
-  width: 405px;
+  width: 100%;
+  max-width: 405px;
   color: #fff;
   font-size: 15px;
   font-style: normal;
@@ -579,7 +581,6 @@ img {
   line-height: 167%;
   margin-bottom: 40px;
   margin-top: 40px;
-  margin-left: 95px;
 }
 
 .hero__title-box-link {
@@ -596,7 +597,6 @@ img {
   padding: 14px 39px;
   text-decoration: none;
   border: 3px solid transparent;
-  margin-left: 95px;
 }
 
 .hero__title-box-link:hover {
@@ -632,7 +632,10 @@ img {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1040px) {
+  .hero {
+    padding-bottom: 190px;
+  }
   .hero__main::after {
     top: 366px;
     left: calc(50% - 500px);
@@ -651,7 +654,7 @@ img {
     width: 100%;
     max-width: 573px;
     text-align: center;
-    margin-left: 70px;
+    margin: 0 auto;
   }
   .hero__main::before {
     content: none;
@@ -661,7 +664,8 @@ img {
     left: calc(50% - 500px);
   }
   .hero__main-heading {
-    width: 565px;
+    width: 100%;
+    max-width: 565px;
     margin: 0 auto;
     color: #fff;
     font-family: "Space Mono";
@@ -672,18 +676,17 @@ img {
     letter-spacing: -2.5px;
   }
   .hero__title-box {
-    max-width: 100%;
-    width: 573px;
+    width: 100%;
+    max-width: 573px;
+    margin-left: 0;
     text-align: center;
   }
   .hero__title-box::before {
     content: none;
   }
-  .hero__main-text {
+  .hero__title-box-text {
     width: 100%;
     max-width: 573px;
-    margin-left: 0;
-    margin: 0 auto;
     margin-top: 24px;
     margin-bottom: 32px;
     color: #fff;
@@ -691,9 +694,15 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 167%;
+    margin-left: 0;
   }
   .hero__title-box-link {
     margin-left: 0;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .hero__main-heading {
+    font-size: 44px;
   }
 }
 @media only screen and (max-width: 440px) {
@@ -708,7 +717,8 @@ img {
     margin-left: 0;
   }
   .hero__main-heading {
-    width: 376px;
+    width: 100%;
+    max-width: 376px;
     color: #fff;
     text-align: center;
     font-family: "Space Mono";
@@ -726,11 +736,120 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 167%;
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
     margin-top: 24px;
     margin-bottom: 32px;
+    margin-left: 0;
   }
 }
+.service {
+  margin-bottom: 200px;
+  overflow-x: hidden;
+}
+
+.service__main-span-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 856px;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+.service__main-span-box::before {
+  content: "";
+  position: absolute;
+  top: 41px;
+  left: calc(50% - 625px);
+  width: 974px;
+  height: 16px;
+  z-index: -1;
+  background-image: url("../../images/Path-2.png");
+  background-size: 974px 16px;
+  background-repeat: no-repeat;
+}
+
+.service__main-span {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  background-color: #fcb72b;
+  border-radius: 50%;
+}
+
+.service__main-span::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: calc(50% - 18px);
+  width: 40px;
+  height: 48px;
+  z-index: 2;
+  background-image: url("../../images/phone-service.svg");
+  background-size: 40px 48px;
+  background-repeat: no-repeat;
+}
+
+.service__main-span:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: calc(50% - 18px);
+  width: 40px;
+  height: 48px;
+  z-index: 2;
+  background-image: url("../../images/001-scooter.svg");
+  background-size: 40px 48px;
+  background-repeat: no-repeat;
+}
+
+.service__main-span:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: calc(50% - 17px);
+  width: 40px;
+  height: 48px;
+  z-index: 2;
+  background-image: url("../../images/Motocycle-service.svg");
+  background-size: 40px 48px;
+  background-repeat: no-repeat;
+}
+
+.service__main-list {
+  list-style-type: none;
+  width: 1106px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.service__main-item-title-box {
+  width: 350px;
+}
+
+.service__main-title-box-heading {
+  color: #495567;
+  font-family: monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117%;
+  letter-spacing: -1.071px;
+  margin-bottom: 27px;
+  margin-top: 40px;
+}
+
+.service__main-title-box-text {
+  color: #939caa;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167%;
+}
+
 .telementry {
   margin-top: 200px;
   position: relative;
@@ -765,7 +884,8 @@ img {
 .telementry__inner {
   display: flex;
   align-items: center;
-  width: 1106px;
+  max-width: 1106px;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -823,6 +943,39 @@ img {
   height: 445px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .telementry {
+    overflow-x: hidden;
+  }
+  .telementry::before {
+    content: none;
+  }
+  .telementry::after {
+    content: none;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .telementry__inner {
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .telementry__main-heading {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .telementry__inner-img {
+    width: 425px;
+    height: 425px;
+  }
+  .telementry__inner {
+    gap: 40px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .telementry {
     overflow-x: hidden;
@@ -846,7 +999,8 @@ img {
   }
   .telementry__main-heading {
     color: #495567;
-    width: 457px;
+    max-width: 457px;
+    width: 100%;
     margin: 0;
     margin: 0 auto;
     font-size: 48px;
@@ -878,7 +1032,8 @@ img {
     text-align: center;
   }
   .telementry__main-heading {
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
     margin: 0 auto;
     color: #495567;
     font-size: 32px;
@@ -889,7 +1044,8 @@ img {
   }
   .telementry__main-text {
     color: #939caa;
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
     margin: 0 auto;
     font-size: 15px;
     font-style: normal;
@@ -899,8 +1055,17 @@ img {
     margin-bottom: 32px;
   }
   .telementry__inner-img {
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
     height: 376px;
+    margin-bottom: 56px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .telementry__inner-img {
+    max-width: 320px;
+    width: 100%;
+    height: 320px;
     margin-bottom: 56px;
   }
 }
@@ -939,7 +1104,8 @@ img {
 .city__inner {
   display: flex;
   align-items: center;
-  width: 1106px;
+  max-width: 1106px;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -996,6 +1162,34 @@ img {
   color: #fcb72b;
 }
 
+@media only screen and (max-width: 1200px) {
+  .city {
+    overflow-x: hidden;
+  }
+  .city::before {
+    content: none;
+  }
+  .city::after {
+    content: none;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .city__inner {
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .city__inner-img {
+    width: 425px;
+    height: 425px;
+  }
+  .city__inner {
+    gap: 40px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .city {
     overflow-x: hidden;
@@ -1020,7 +1214,8 @@ img {
   }
   .city__main-heading {
     color: #495567;
-    width: 457px;
+    max-width: 457px;
+    width: 100%;
     margin: 0;
     margin: 0 auto;
     font-size: 48px;
@@ -1060,7 +1255,8 @@ img {
   }
   .city__main-heading {
     color: #495567;
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
     margin: 0 auto;
     font-size: 32px;
     font-style: normal;
@@ -1070,7 +1266,8 @@ img {
   }
   .city__main-text {
     color: #939caa;
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
     margin: 0 auto;
     font-size: 15px;
     font-style: normal;
@@ -1082,6 +1279,14 @@ img {
   .city__inner-img {
     width: 376px;
     height: 376px;
+    margin-bottom: 56px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .city__inner-img {
+    max-width: 320px;
+    width: 100%;
+    height: 320px;
     margin-bottom: 56px;
   }
 }
@@ -1118,12 +1323,14 @@ img {
 .hassle__inner {
   display: flex;
   align-items: center;
-  width: 1106px;
+  max-width: 1106px;
+  width: 100%;
   justify-content: space-between;
 }
 
 .hassle__main {
-  width: 445px;
+  max-width: 445px;
+  width: 100%;
 }
 
 .hassle__main-heading {
@@ -1176,6 +1383,34 @@ img {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .hassle {
+    overflow-x: hidden;
+  }
+  .hassle::before {
+    content: none;
+  }
+  .hassle::after {
+    content: none;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .hassle__inner {
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    gap: 70px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .telementry__inner-img {
+    width: 425px;
+    height: 425px;
+  }
+  .hassle__inner {
+    gap: 40px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .hassle {
     overflow-x: hidden;
@@ -1200,7 +1435,8 @@ img {
   }
   .hassle__main-heading {
     color: #495567;
-    width: 457px;
+    max-width: 457px;
+    width: 100%;
     margin: 0;
     margin: 0 auto;
     font-size: 48px;
@@ -1242,7 +1478,8 @@ img {
     text-align: center;
   }
   .hassle__main-heading {
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     margin: 0 auto;
     color: #495567;
     font-size: 32px;
@@ -1253,7 +1490,8 @@ img {
   }
   .hassle__main-text {
     color: #939caa;
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
     margin: 0 auto;
     font-size: 15px;
     font-style: normal;
@@ -1265,6 +1503,13 @@ img {
   .hassle__inner-img {
     width: 376px;
     height: 376px;
+    margin-bottom: 56px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hassle__inner-img {
+    width: 320px;
+    height: 320px;
     margin-bottom: 56px;
   }
 }/*# sourceMappingURL=style.css.map */
