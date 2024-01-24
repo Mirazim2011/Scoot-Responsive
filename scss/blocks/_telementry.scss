@@ -1,6 +1,7 @@
 .telementry {
   margin-top: 200px;
   position: relative;
+  overflow-x: hidden;
 }
 .telementry::before {
   content: "";

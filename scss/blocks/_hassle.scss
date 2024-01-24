@@ -1,5 +1,6 @@
 .hassle {
   position: relative;
+  overflow-x: hidden;
 }
 .hassle::before {
   content: "";
