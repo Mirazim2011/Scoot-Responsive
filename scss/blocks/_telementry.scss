@@ -1,4 +1,5 @@
 .telementry {
+  overflow-y: hidden;
   margin-top: 200px;
   position: relative;
   overflow-x: hidden;
@@ -203,8 +204,7 @@
 @media only screen and (max-width: 375px) {
   .telementry__inner-img {
     max-width: 320px;
-    width: 100%;
     height: 320px;
-    margin-bottom: 56px;
+    margin-bottom: 56px
   }
 }

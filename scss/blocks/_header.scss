@@ -1,3 +1,6 @@
+.site-header {
+  position: relative;
+}
 .site-header__inner {
   overflow-x: hidden;
   padding-top: 22px;
@@ -93,4 +96,18 @@
   .site-header__inner-link {
     display: none;
   }
+}
+.menu-open {
+  position: absolute;
+  left: -32px;
+  top: 64px;
+  width: 70%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #333a44;
+  height: 100vh;
+  padding-top: 32px;
+  padding-left: 32px;
 }
