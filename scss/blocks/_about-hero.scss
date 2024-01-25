@@ -1,0 +1,40 @@
+.hero-about {
+  padding: 72px 0;
+  background-image: url("../../images/about-hero.png");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-bottom: 120px;
+}
+.hero-about-heading {
+  color: #fff;
+  margin: 0;
+  font-family: "Space Mono";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2.5px;
+}
+@media only screen and (max-width: 1300px) {
+  .hero-about-heading {
+    padding-left: 65px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-about {
+    background-position: calc(50% - 330px);
+  }
+}
+@media only screen and (max-width: 440px) {
+  .hero-about {
+    background-position: calc(50% + 170px);
+    padding: 60px 0;
+  }
+  .hero-about-heading {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+}
