@@ -106,16 +106,7 @@
     background-repeat: no-repeat;
   }
   .era::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: calc(50% + 320px);
-    width: 445px;
-    height: 445px;
-    z-index: -1;
-    background-image: url("../../images/square-blue.png");
-    background-size: 445px;
-    background-repeat: no-repeat;
+    content: none;
   }
   .era__inner:nth-child(odd) {
     flex-direction: column-reverse;

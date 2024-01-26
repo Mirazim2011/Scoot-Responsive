@@ -21,11 +21,11 @@
     padding-left: 65px;
   }
 }
-@media only screen and (max-width: 768px) {
-  .hero-about {
-    background-position: calc(50% - 330px);
-  }
-}
+// @media only screen and (max-width: 768px) {
+//   .hero-about {
+//     background-position: calc(50% - 330px);
+//   }
+// }
 @media only screen and (max-width: 440px) {
   .hero-about {
     background-position: calc(50% + 170px);
