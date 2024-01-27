@@ -1,12 +1,12 @@
-.hero-about {
+.career-hero {
   padding: 72px 0;
-  background-image: url("../../images/about-hero.png");
+  background-image: url("../../images/career-hero.png");
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
   margin-bottom: 120px;
 }
-.hero-about-heading {
+.career-hero-heading {
   color: #fff;
   margin: 0;
   font-family: "Space Mono";
@@ -17,16 +17,16 @@
   letter-spacing: -2.5px;
 }
 @media only screen and (max-width: 1300px) {
-  .hero-about-heading {
+  .career-hero-heading {
     padding-left: 65px;
   }
 }
 @media only screen and (max-width: 440px) {
-  .hero-about {
+  .career-hero {
     background-position: calc(50% + 170px);
     padding: 60px 0;
   }
-  .hero-about-heading {
+  .career-hero-heading {
     max-width: 350px;
     width: 100%;
     text-align: center;
