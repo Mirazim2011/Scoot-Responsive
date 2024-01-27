@@ -85,16 +85,13 @@
 }
 @media only screen and (max-width: 1200px) {
   .hassle {
-    &::before {
-      content: none;
-    }
-    &::after {
-      content: none;
-    }
     overflow-x: hidden;
   }
 }
 @media only screen and (max-width: 1140px) {
+  .hassle::before {
+    left: calc(50% + 200px);
+  }
   .hassle__inner {
     max-width: 1200px;
     width: 100%;
@@ -114,8 +111,8 @@
 @media only screen and (max-width: 768px) {
   .hassle {
     &::before {
-      top: 300px;
-      left: calc(50% - 300px);
+      top: 100px;
+      left: calc(50% - 100px);
     }
     &::after {
       top: 20px;

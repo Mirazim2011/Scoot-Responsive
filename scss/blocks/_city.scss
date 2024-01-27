@@ -84,16 +84,13 @@
 }
 @media only screen and (max-width: 1200px) {
   .city {
-    &::before {
-      content: none;
-    }
-    &::after {
-      content: none;
-    }
     overflow-x: hidden;
   }
 }
 @media only screen and (max-width: 1140px) {
+  .city:before {
+    left: calc(50% - 900px);
+  }
   .city__inner {
     max-width: 1000px;
     width: 100%;

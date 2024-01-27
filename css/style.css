@@ -1249,12 +1249,6 @@ img {
   .telementry {
     overflow-x: hidden;
   }
-  .telementry::before {
-    content: none;
-  }
-  .telementry::after {
-    content: none;
-  }
 }
 @media only screen and (max-width: 1140px) {
   .telementry__inner {
@@ -1270,6 +1264,9 @@ img {
   }
 }
 @media only screen and (max-width: 900px) {
+  .telementry::before {
+    top: 270px;
+  }
   .telementry__inner-img {
     width: 425px;
     height: 425px;
@@ -1284,7 +1281,6 @@ img {
   }
   .telementry::before {
     top: 300px;
-    left: calc(50% - 300px);
   }
   .telementry::after {
     top: 20px;
@@ -1368,6 +1364,11 @@ img {
     max-width: 320px;
     height: 320px;
     margin-bottom: 56px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .telementry::before {
+    left: 50%;
   }
 }
 .city {
@@ -1468,14 +1469,11 @@ img {
   .city {
     overflow-x: hidden;
   }
-  .city::before {
-    content: none;
-  }
-  .city::after {
-    content: none;
-  }
 }
 @media only screen and (max-width: 1140px) {
+  .city:before {
+    left: calc(50% - 900px);
+  }
   .city__inner {
     max-width: 1000px;
     width: 100%;
@@ -1691,14 +1689,11 @@ img {
   .hassle {
     overflow-x: hidden;
   }
-  .hassle::before {
-    content: none;
-  }
-  .hassle::after {
-    content: none;
-  }
 }
 @media only screen and (max-width: 1140px) {
+  .hassle::before {
+    left: calc(50% + 200px);
+  }
   .hassle__inner {
     max-width: 1200px;
     width: 100%;
@@ -1720,8 +1715,8 @@ img {
     overflow-x: hidden;
   }
   .hassle::before {
-    top: 300px;
-    left: calc(50% - 300px);
+    top: 100px;
+    left: calc(50% - 100px);
   }
   .hassle::after {
     top: 20px;
