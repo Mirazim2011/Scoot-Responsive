@@ -1,0 +1,37 @@
+.location-hero {
+  overflow-x: hidden;
+  padding: 72px 0;
+  background-image: url("../../images/locationn-hero.png");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-bottom: 120px;
+}
+.location-hero-heading {
+  color: #fff;
+  margin: 0;
+  font-family: "Space Mono";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2.5px;
+}
+@media only screen and (max-width: 1300px) {
+  .location-hero-heading {
+    padding-left: 65px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .location-hero {
+    background-position: calc(50% + 170px);
+    padding: 60px 0;
+    margin-bottom: 72px;
+  }
+  .location-hero-heading {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+}
