@@ -74,3 +74,25 @@
     width: 100%;
   }
 }
+@media only screen and (max-width: 425px) {
+  .listed {
+    margin-top: 64px;
+  }
+  .listed__inner {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 40px;
+  }
+  .listed__inner-heading {
+    max-width: 457px;
+    width: 100%;
+    font-size: 32px;
+  }
+  .listed__inner-text {
+    max-width: 573px;
+    width: 100%;
+  }
+}
